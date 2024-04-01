@@ -5,86 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: rgb(35, 14, 117);
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-        }
-
-        nav {
-            background-color: rgb(108, 101, 171);
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: rgb(241, 243, 248);
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding:80px;
-        }
-
-        footer {
-            background-color: rgb(35, 14, 117);
-            color: #fff;
-            text-align: left;
-            padding: 0 7px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
         <h1>Welcome to My Page!</h1>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="home">
-            <h2 align="right"><img src="img/gambar2.jpg" height="150px" width="150px" alt="profil" title="Foto Profil" align="left">About Me:</h2>
-            <p align="right">Hi! Perkenalkan nama saya Cecyl Ursula Damo. Saya adalah seorang mahasiswa semester 4 di Universitas Sam Ratulangi, dengan Program Studi Teknik Informatika di bawah Jurusan Teknik Elektro Fakultas Teknik. 
-            </p>
-        </section>
-    </div>
+
+    <main>
+        <div class="container">
+            <h2 align="right"><img src="img/gambar2.png" height="200px" width="200px" alt="profil" title="Foto Profil" align="left">About <span>Me</span>:</h2>
+            <div class="about">
+                <p align="right">Hi! Perkenalkan nama saya Cecyl Ursula Damo. Saya adalah seorang mahasiswa semester 4 di Universitas Sam Ratulangi, dengan Program Studi Teknik Informatika di bawah Jurusan Teknik Elektro Fakultas Teknik. 
+                </p>
+            </div>
+        </div>
+    </main>
+    
     <footer>
         <p>&copy; 2024 Cecyl Damo's Personal Page.</p>
     </footer>
