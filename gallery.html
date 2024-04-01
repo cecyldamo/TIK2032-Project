@@ -3,95 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: rgb(35, 14, 117);
-            color: #fff;
-            text-align: center;
-            padding: 5px 0;
-        }
-    
-        nav {
-            background-color: rgb(108, 101, 171);
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: rgb(241, 243, 248);
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer {
-            background-color: rgb(35, 14, 117);
-            color: #fff;
-            text-align: left;
-            padding: 0 7px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 20px;
-            text-align: left;
-            padding: 2px 25px;
-        }
-    
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-    
-        .gallery img {
-            width: 350px;
-            margin-top: 2px;
-            margin-bottom: 25px;
-            margin-left: 25px;
-            margin-right: 20px;
-        }
-    </style>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
 
 <header>
-    <section id="gallery">
-        <h1>GALLERY</h1>
+        <h1>Gallery</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-    </section>
 </header>
 
 <main>
-            <div class="gallery">
-                <h3>Campus Life</h3>
-                <img src="img/gambar11.jpg" alt="Image 1">
-                <img src="img/gambar3.jpg" alt="Image 2">
-                <h3>Personal Favorites</h3>
-                <img src="img/gambar8.png" alt="Image 3">
-                <img src="img/gambar9.jpg" alt="Image 4">
-                <img src="img/gambar10.jpg" alt="Image 5">
-                <p><br><br></p>
-            </div>
+    <section class="gallery">
+        <h3>Campus Life</h3>
+        <div class="imgcon1">
+            <img src="img/gambar11.jpg" alt="Image 1">
+            <img src="img/gambar3.jpg" alt="Image 2">
+        </div>
+        <h3>Personal Favorites</h3>
+        <div class="imgcon2">
+            <img src="img/gambar8.png" alt="Image 3">
+            <img src="img/gambar9.jpg" alt="Image 4">
+            <img src="img/gambar10.jpg" alt="Image 5">
+        </div>
+    </section>
 </main>
 
 <footer>
