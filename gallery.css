@@ -9,8 +9,12 @@ body {
 header {
     background-color: #424874;
     color: #fff;
-    text-align: center;
+    text-align: right; /* Mengatur teks header menjadi rata kanan */
     padding-top: 15px;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Menjadikan header dan menu berada di dua sisi berlawanan */
+    align-items: center; /* Memusatkan vertikal isi header dan menu */
+    padding: 5px 30px;
 }
 
 header > h1 {
@@ -20,11 +24,13 @@ header > h1 {
 }
 
 .menu > ul {
-    background-color: #DCD6F7;
     padding: 15px;
     height: 20px;
-    text-align: center;
+    text-align: left; /* Mengatur teks menu menjadi rata kiri */
     list-style-type: none;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: flex-start; /* Menjadikan isi menu berada di sisi kiri */
+    align-items: center;
 }
 
 .menu >  ul > li {
@@ -39,7 +45,14 @@ header > h1 {
 }
 
 .menu > ul > li > a:hover{
-    color: #424874;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: #000000;
+}
+
+.gallery {
+    padding: 30px 15px;
 }
 
 footer {
@@ -79,14 +92,40 @@ img {
     margin-bottom: 15px;
 }
 
-.imgcon1 {
+.imgcon1, .imgcon2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.imgcon2 {
+.imgcon1 img, .imgcon2 img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.imgcon1 img:hover, .imgcon2 img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
