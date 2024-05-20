@@ -10,11 +10,11 @@ body {
 header {
     background-color: #424874;
     color: #fff;
-    text-align: right; /* Mengatur teks header menjadi rata kanan */
+    text-align: right;
     padding-top: 15px;
-    display: flex; /* Menggunakan flexbox */
-    justify-content: space-between; /* Menjadikan header dan menu berada di dua sisi berlawanan */
-    align-items: center; /* Memusatkan vertikal isi header dan menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px 30px;
 }
 
@@ -27,10 +27,10 @@ header > h1 {
 .menu > ul {
     padding: 15px;
     height: 20px;
-    text-align: left; /* Mengatur teks menu menjadi rata kiri */
+    text-align: left;
     list-style-type: none;
-    display: flex; /* Menggunakan flexbox */
-    justify-content: flex-start; /* Menjadikan isi menu berada di sisi kiri */
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -53,9 +53,11 @@ header > h1 {
 }
 
 main {
-    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
     margin: 20px auto;
     padding: 0 20px;
+    max-width: 800px;
 }
 
 .contact {
@@ -63,15 +65,60 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.contact-text {
+    margin-bottom: 20px;
 }
 
 .info {
     margin-top: 20px;
+    text-align: center; /* Mengatur teks menjadi rata tengah */
 }
 
 .info span {
     font-weight: bold;
     color: #333;
+}
+
+.contact-form {
+    width: 48%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    background-color: #424874;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Agar tombol memiliki sudut yang melengkung */
+    transition: background-color 0.3s; /* Animasi perubahan warna latar belakang */
+}
+
+form input[type="submit"]:hover {
+    background-color: #30335c; /* Warna latar belakang saat tombol disorot */
 }
 
 footer {
@@ -82,21 +129,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-size: 20px;
-    text-align: left;
-    padding: 2px 25px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 2px 25px;
 }
